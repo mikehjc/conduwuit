@@ -32,9 +32,6 @@ sqlite = [
 rocksdb = [
 	"dep:rust-rocksdb",
 ]
-jemalloc = [
-	"rust-rocksdb/jemalloc",
-]
 io_uring = [
 	"rust-rocksdb/io-uring",
 ]
