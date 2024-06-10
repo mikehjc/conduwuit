@@ -32,15 +32,6 @@ sqlite = [
 rocksdb = [
 	"dep:rust-rocksdb",
 ]
-jemalloc = [
-	"dep:tikv-jemalloc-sys",
-	"dep:tikv-jemalloc-ctl",
-	"dep:tikv-jemallocator",
-	"rust-rocksdb/jemalloc",
-]
-jemalloc_prof = [
-	"tikv-jemalloc-sys/profiling",
-]
 hardened_malloc = [
 	"dep:hardened_malloc-rs"
 ]
@@ -90,12 +81,6 @@ serde.workspace = true
 thiserror.workspace = true
 thread_local.optional = true
 thread_local.workspace = true
-tikv-jemallocator.optional = true
-tikv-jemallocator.workspace = true
-tikv-jemalloc-ctl.optional = true
-tikv-jemalloc-ctl.workspace = true
-tikv-jemalloc-sys.optional = true
-tikv-jemalloc-sys.workspace = true
 tokio.workspace = true
 tracing-subscriber.workspace = true
 tracing.workspace = true
