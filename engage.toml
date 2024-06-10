@@ -108,30 +108,17 @@ env DIRENV_DEVSHELL=all-features \
 """
 
 [[task]]
-name = "clippy/jemalloc"
+name = "clippy/hardened_malloc"
 group = "lints"
 script = """
 cargo clippy \
     --workspace \
-    --features jemalloc \
+    --features hardened_malloc \
     --all-targets \
     --color=always \
     -- \
     -D warnings
 """
-
-#[[task]]
-#name = "clippy/hardened_malloc"
-#group = "lints"
-#script = """
-#cargo clippy \
-#    --workspace \
-#    --features hardened_malloc \
-#    --all-targets \
-#    --color=always \
-#    -- \
-#    -D warnings
-#"""
 
 [[task]]
 name = "lychee"
