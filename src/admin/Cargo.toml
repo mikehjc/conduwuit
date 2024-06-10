@@ -27,9 +27,6 @@ release_max_log_level = [
 rocksdb = [
 	"dep:rust-rocksdb",
 ]
-jemalloc = [
-	"rust-rocksdb/jemalloc",
-]
 io_uring = [
 	"rust-rocksdb/io-uring",
 ]
